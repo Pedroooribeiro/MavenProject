@@ -13,9 +13,9 @@ pipeline{
                 mvn clean package -f ./pom.xml -s '${MAVEN_SETTINGS}' -gs '${MAVEN_GLOBAL_SETTINGS}' -Dmaven.test.skip=true
                 """
 
-                sh 'ls -l 
+                sh '''ls -l 
                 pwd
-                '
+                '''
                 }
             }
         }
