@@ -3,5 +3,6 @@ pipeline{
     stages{
         stage('Checkout SCM'){
             print ("Sucess!")
+        }
     }
 }
