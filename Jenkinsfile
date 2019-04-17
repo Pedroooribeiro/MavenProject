@@ -13,7 +13,7 @@ pipeline{
                 mvn clean package -f ./pom.xml -s '${MAVEN_SETTINGS}' -gs '${MAVEN_GLOBAL_SETTINGS}' -Dmaven.test.skip=true
                 """
 
-                sh 'javac ./target/hello.jar'
+                sh 'java ./target/hello.jar'
                 }
             }
         }
