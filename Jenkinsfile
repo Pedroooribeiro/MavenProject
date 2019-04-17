@@ -1,13 +1,13 @@
 pipeline{
     agent any
     stages{
-        stage('MAVEN')(
+        stage('MAVEN'){
             steps{
                 println ("Elvira's")
                 sh '''
                 mvn clean package -f ./pom.xml 
                 '''
             }
-        )
+        }
     }
 }
