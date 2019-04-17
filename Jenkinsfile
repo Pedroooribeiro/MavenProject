@@ -7,9 +7,11 @@ pipeline{
             }
         }
         stage('Maven'){
-            sh ''' mvn package 
-            java -cp target/hello.jar com.example.hello.hello
-            '''
+            steps{
+                sh ''' mvn package 
+                java -cp target/hello.jar com.example.hello.hello
+                '''
+            }
         }
     }
 }
